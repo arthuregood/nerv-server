@@ -4,8 +4,8 @@ services:
     container_name: jellyfin
     #network_mode: 'host'
     volumes:
-      - ~/nerv-server/jellyfin/config:/config
-      - ~/nerv-server/jellyfin/cache:/cache
+      - ./config:/config
+      - ./cache:/cache
       - type: bind
         source: /mnt/primario/medias
         target: /media
@@ -17,5 +17,5 @@ services:
     #environment:
     #  - JELLYFIN_PublishedServerUrl=http://example.com
     # Optional - may be necessary for docker healthcheck to pass if running in host network mode
-  extra_hosts:
-      - 'host.docker.internal:host-gateway'
+  #extra_hosts:
+  #    - 'host.docker.internal:host-gateway'
