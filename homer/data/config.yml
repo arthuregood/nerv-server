@@ -15,7 +15,7 @@ footer: false
 theme: default
 
 # Optional theme customization (color overrrides)
-# overrrides can also be done using CSS vars 
+# overrrides can also be done using CSS vars
 colors:
   light:
     highlight-primary: "#3367d6"
@@ -62,11 +62,11 @@ colors:
 #   - name: "Wiki"
 #     icon: "fas fa-book"
 #     url: "https://www.wikipedia.org/"
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  #- name: "another page!"
-  #  icon: "fas fa-file-alt"
-  #  url: "#additional-page" 
+# this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+# see url field and assets/additional-page.yml.dist used in this example:
+#- name: "another page!"
+#  icon: "fas fa-file-alt"
+#  url: "#additional-page"
 
 # Services
 # First level array represent a group.
@@ -80,12 +80,54 @@ services:
         subtitle: "Manage docker images"
         tag: "app"
         keywords: "docker container portainer"
-        url: "https://localhost:9443/#!/2/docker/dashboard"
+        url: "https://10.0.1.161:9443/#!/2/docker/dashboard"
         target: "_blank"
 
       - name: "Immich"
         logo: "assets/tools/immich.png"
         subtitle: "Photos app"
         tag: "app"
-        url: "http://localhost:2283/photos"
+        url: "https://immich.arthuregood.online"
+        target: "_blank"
+
+      - name: "Jellyfin"
+        logo: "assets/tools/jellyfin.svg"
+        subtitle: "Movies and Series"
+        tag: "app"
+        url: "http://10.0.1.161:8096"
+        target: "_blank"
+
+      - name: "Qbittorrent"
+        logo: "assets/tools/qbittorrent.svg"
+        subtitle: "Qbittorrent"
+        tag: "app"
+        url: "http://10.0.1.161:8666"
+        target: "_blank"
+
+      - name: "Radarr"
+        logo: "assets/tools/radarr.svg"
+        subtitle: "Automated movie downloader"
+        tag: "app"
+        url: "http://10.0.1.161:7878"
+        target: "_blank"
+
+      - name: "Sonarr"
+        logo: "assets/tools/sonarr.svg"
+        subtitle: "Automated series downloader"
+        tag: "app"
+        url: "http://10.0.1.161:8989"
+        target: "_blank"
+
+      - name: "Bazarr"
+        logo: "assets/tools/bazarr.svg"
+        subtitle: "Automated subtitles downloader"
+        tag: "app"
+        url: "http://10.0.1.161:6767"
+        target: "_blank"
+
+      - name: "Prowlarr"
+        logo: "assets/tools/prowlarr.svg"
+        subtitle: "Indexers setup"
+        tag: "app"
+        url: "http://10.0.1.161:9696"
         target: "_blank"
