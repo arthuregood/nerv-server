@@ -1,0 +1,9 @@
+# ignore databases etc
+starr-apps/*
+immich/postgres/*
+jellyfin/cache/*
+jellyfin/config/*
+
+# Except docker-compose.yml
+!starr-apps/docker-compose.yml
+
