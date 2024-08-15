@@ -12,7 +12,7 @@ services:
       - PGID=1000
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ~/apps-docker/starr-apps/radarr:/config
+      - ~/nerv-server/starr-apps/radarr:/config
       - /mnt/primario/medias:/data
   sonarr:
     container_name: sonarr
@@ -27,7 +27,7 @@ services:
       - PGID=1000
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ~/apps-docker/starr-apps/sonarr:/config
+      - ~/nerv-server/starr-apps/sonarr:/config
       - /mnt/primario/medias:/data
   bazarr:
     container_name: bazarr
@@ -42,7 +42,7 @@ services:
       - PGID=1000
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ~/apps-docker/starr-apps/bazarr:/config
+      - ~/nerv-server/starr-apps/bazarr:/config
       - /mnt/primario/medias:/data
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:latest
@@ -51,7 +51,7 @@ services:
       - PUID=1000
       - PGID=1000
     volumes:
-      -  ~/apps-docker/starr-apps/prowlarr:/config
+      - ~/nerv-server/starr-apps/prowlarr:/config
     ports:
       - 9696:9696
     restart: unless-stopped
@@ -76,7 +76,7 @@ services:
       - WEBUI_PORT=8666
       - TORRENTING_PORT=6881
     volumes:
-      - ~/apps-docker/starr-apps/qbittorrent:/config
+      - ~/nerv-server/starr-apps/qbittorrent:/config
       - /mnt/primario/medias/torrents:/data/torrents #optional
     ports:
       - 8666:8666
