@@ -2,9 +2,9 @@
 # Homepage configuration
 # See https://fontawesome.com/v6/search for icons options
 
-title: "Demo dashboard"
-subtitle: "Homer"
-logo: "shinji.png"
+title: "Nerv Server"
+subtitle: "God's in His heaven, all's right with the world."
+logo: "assets/shinji.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
