@@ -4,7 +4,7 @@
 
 title: "Nerv Server"
 subtitle: "God's in His heaven, all's right with the world."
-logo: "assets/tools/immich.png"
+logo: "assets/shinji.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
@@ -92,6 +92,9 @@ services:
         url: "http://10.0.1.161:8096"
         target: "_blank"
 
+  - name: "Series Management"
+    icon: "fas fa-tv"
+    items:
       - name: "Qbittorrent"
         logo: "assets/tools/qbittorrent.png"
         subtitle: "Qbittorrent"
@@ -99,9 +102,6 @@ services:
         url: "http://10.0.1.161:8666"
         target: "_blank"
 
-  - name: "Series Management"
-    icon: "fas fa-tv"
-    items:
       - name: "Radarr"
         logo: "assets/tools/radarr.png"
         subtitle: "Automated movie downloader"
