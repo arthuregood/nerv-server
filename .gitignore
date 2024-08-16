@@ -7,3 +7,6 @@ jellyfin/config/*
 # Except docker-compose.yml
 !starr-apps/docker-compose.yml
 
+
+
+.DS_Store
