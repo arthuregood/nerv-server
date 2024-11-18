@@ -1,6 +1,7 @@
 # ignore databases etc
 starr-apps/*
 immich/postgres/*
+immich/.env
 jellyfin/cache/*
 jellyfin/config/*
 
