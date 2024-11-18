@@ -10,3 +10,4 @@ jellyfin/config/*
 
 
 .DS_Store
+.env
