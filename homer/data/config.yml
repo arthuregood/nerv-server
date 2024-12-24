@@ -110,7 +110,7 @@ services:
         logo: "assets/tools/qbittorrent.png"
         subtitle: "Qbittorrent"
         tag: "VPN"
-        url: "192.168.15.15:8666"
+        url: "http://192.168.15.15:8666"
         target: "_blank"
 
   # - name: "Series Management"
