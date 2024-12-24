@@ -1,12 +1,12 @@
 # ignore databases etc
-starr-apps/*
 immich/postgres/*
 immich/.env
 jellyfin/cache/*
 jellyfin/config/*
+qbittorrent/*
 
 # Except docker-compose.yml
-!starr-apps/docker-compose.yml
+!qbittorrent/docker-compose.yml
 
 
 
